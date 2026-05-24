@@ -1,12 +1,8 @@
 # 我去图书馆小程序解包分析
 
-> Woqu Library miniapp unpack analysis, admin-side code samples, and reverse-engineering notes.
-
 ## 项目简介
 
 本仓库用于整理“我去图书馆”相关微信小程序与管理端前端的解包结果、还原代码样本和静态分析文档，方便后续持续补充接口观察、页面逻辑梳理与行为链路研究。
-
-This repository collects unpacked WeChat miniapp artifacts, admin-side frontend samples, and static analysis notes related to Woqu Library.
 
 当前仓库的重点不在于重新开发业务，而在于保留分析现场，包括：
 
@@ -26,8 +22,6 @@ This repository collects unpacked WeChat miniapp artifacts, admin-side frontend 
 - 作为后续审计、研究、复核的基础材料
 
 仓库内保留的内容以“可用于分析”和“可用于复现阅读上下文”为原则，不保留无关脚本、备份目录和临时工具文件。
-
-The repository is organized as an analysis archive rather than a runnable product project.
 
 ## 目录结构
 
@@ -50,17 +44,6 @@ The repository is organized as an analysis archive rather than a runnable produc
 
 - `相关文档/`
   保存对解包结果和管理端代码的阶段性分析结论，是仓库中最适合快速阅读全局结论的部分。
-
-## English Summary
-
-- `wx3b9352e6b254ed2b_unpacked_还原模块/`
-  Restored output from the unpacked WeChat miniapp package.
-
-- `我去图书馆管理端/`
-  Admin-side frontend sample code used for page and API analysis.
-
-- `相关文档/`
-  Markdown notes that summarize findings, data flow observations, and interface mapping.
 
 ## 文档索引
 
@@ -122,13 +105,6 @@ The repository is organized as an analysis archive rather than a runnable produc
 3. 接着看 `相关文档/蓝牙签到与验证码校验总结.md`，聚焦签到链路。
 4. 最后结合 `wx3b9352e6b254ed2b_unpacked_还原模块/` 和 `我去图书馆管理端/` 对照原始代码定位具体实现。
 
-Recommended reading order in English:
-
-1. Start with `我去图书馆管理端_初步分析.md` for a quick overview.
-2. Continue with `我去图书馆管理端_深入分析.md` for deeper interface and page analysis.
-3. Read `蓝牙签到与验证码校验总结.md` for BLE sign-in related logic.
-4. Cross-reference the notes with the unpacked source directories.
-
 ## 适合继续补充的内容
 
 后续如果继续维护这个仓库，可以优先补这些方向：
@@ -171,8 +147,6 @@ Recommended reading order in English:
 
 本仓库不依赖额外运行环境即可阅读，大多数内容可直接通过编辑器或代码托管平台浏览。
 
-No special runtime is required for browsing this repository. Most content can be reviewed directly in an editor or on GitHub.
-
 如果需要进一步定位代码，建议：
 
 - 使用全文搜索查找接口路径、页面名、请求字段
@@ -182,5 +156,3 @@ No special runtime is required for browsing this repository. Most content can be
 ## 免责声明
 
 本项目仅用于授权场景下的学习、研究与安全分析。请勿将仓库中的内容用于绕过签到、门禁、考勤、访问控制或任何未经授权的用途。
-
-For authorized research, learning, and security analysis only. Do not use this material for bypassing sign-in, access control, attendance, or any unauthorized workflow.
